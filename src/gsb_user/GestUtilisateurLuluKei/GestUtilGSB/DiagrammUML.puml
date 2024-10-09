@@ -1,0 +1,59 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class GSB_FRAIS.AddWindows
+class GSB_FRAIS.EditWindows
+class GSB_FRAIS.MainWindow
+class GSB_FRAIS.PageConnexionGSB
+class GSB_FRAIS.RechercheWindows
+class com.mysql.jdbc.Connection
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.table.DefaultTableModel
+GSB_FRAIS.AddWindows ..> java.lang.SuppressWarnings
+GSB_FRAIS.AddWindows ..> com.mysql.jdbc.Connection
+GSB_FRAIS.AddWindows ..> java.sql.DriverManager
+GSB_FRAIS.AddWindows ..> java.sql.PreparedStatement
+GSB_FRAIS.AddWindows ..> java.sql.SQLException
+GSB_FRAIS.AddWindows ..> java.util.logging.Level
+GSB_FRAIS.AddWindows ..> java.util.logging.Logger
+GSB_FRAIS.AddWindows --|> javax.swing.JFrame
+GSB_FRAIS.AddWindows ..> javax.swing.JOptionPane
+GSB_FRAIS.EditWindows ..> java.lang.SuppressWarnings
+GSB_FRAIS.EditWindows ..> java.sql.Connection
+GSB_FRAIS.EditWindows ..> java.sql.PreparedStatement
+GSB_FRAIS.EditWindows ..> java.sql.ResultSet
+GSB_FRAIS.EditWindows ..> java.sql.SQLException
+GSB_FRAIS.EditWindows ..> java.util.logging.Level
+GSB_FRAIS.EditWindows ..> java.util.logging.Logger
+GSB_FRAIS.EditWindows --|> javax.swing.JFrame
+GSB_FRAIS.EditWindows ..> javax.swing.JOptionPane
+GSB_FRAIS.MainWindow ..> java.lang.SuppressWarnings
+GSB_FRAIS.MainWindow ..> java.sql.SQLException
+GSB_FRAIS.MainWindow ..> java.util.logging.Level
+GSB_FRAIS.MainWindow ..> java.util.logging.Logger
+GSB_FRAIS.MainWindow --|> javax.swing.JFrame
+GSB_FRAIS.PageConnexionGSB ..> java.lang.SuppressWarnings
+GSB_FRAIS.PageConnexionGSB ..> java.sql.Connection
+GSB_FRAIS.PageConnexionGSB ..> java.sql.DriverManager
+GSB_FRAIS.PageConnexionGSB ..> java.sql.PreparedStatement
+GSB_FRAIS.PageConnexionGSB ..> java.sql.ResultSet
+GSB_FRAIS.PageConnexionGSB --|> javax.swing.JFrame
+GSB_FRAIS.PageConnexionGSB ..> javax.swing.JOptionPane
+GSB_FRAIS.RechercheWindows ..> java.lang.SuppressWarnings
+GSB_FRAIS.RechercheWindows ..> java.sql.Connection
+GSB_FRAIS.RechercheWindows ..> java.sql.DriverManager
+GSB_FRAIS.RechercheWindows ..> java.sql.PreparedStatement
+GSB_FRAIS.RechercheWindows ..> java.sql.ResultSet
+GSB_FRAIS.RechercheWindows ..> java.sql.SQLException
+GSB_FRAIS.RechercheWindows ..> java.util.logging.Level
+GSB_FRAIS.RechercheWindows ..> java.util.logging.Logger
+GSB_FRAIS.RechercheWindows --|> javax.swing.JFrame
+GSB_FRAIS.RechercheWindows ..> javax.swing.table.DefaultTableModel
+@enduml
